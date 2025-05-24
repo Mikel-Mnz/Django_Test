@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Modal from "./components/Modal";
 import axios from "axios";
+import MyComponent from "./MyComponent";
 
 class App extends Component {
   constructor(props) {
@@ -148,6 +149,10 @@ class App extends Component {
             </div>
           </div>
         </div>
+        <div className="mt-4">
+          <MyComponent />
+        </div>
+
         {this.state.modal ? (
           <Modal
             activeItem={this.state.activeItem}
